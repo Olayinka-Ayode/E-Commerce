@@ -73,3 +73,70 @@
 .first-model{
     bottom: 91px;
 }
+
+.legend {
+    font-size: 24px;
+    line-height: 68px;
+}
+
+.legend-border {
+    width: 791px;
+}
+
+.left-legend{
+    /* right: 990px;     */
+    float: left;
+}
+
+.lg{
+    top: 35px;
+}
+
+.t-cta-01{
+    font-size: 48px;
+    line-height: 62px;
+}
+
+.t-cta-02{
+    font-size: 22px;
+    line-height: 37px;
+}
+
+.t-cta-03{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.cta-button{
+    text-align: center;
+    border: black 3px solid;
+    padding: 15px 35px 15px 35px;
+}
+
+.t-cta-11{
+    font-size: 96px;
+    line-height: 110px;
+}
+
+.t-cta-12{
+    font-size: 25px;
+    line-height: 37px;
+}
+
+.t-cta-31{
+    font-size: 24px;
+    line-height: 68px;
+}
+
+.t-cta-32{
+    font-size: 14px;
+    line-height: 48px;
+}
+
+.pb-show{
+    padding-bottom: 993px;
+}
+
+input[type="checkbox"]:checked{
+    background-color: black;
+}
