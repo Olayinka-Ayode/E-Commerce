@@ -140,3 +140,35 @@
 input[type="checkbox"]:checked{
     background-color: black;
 }
+
+.border-2{
+    border-width: 1px;
+    border-style: solid;
+}
+
+.pre-footer-t{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.f-socials-t{
+    font-size: 13px;
+    line-height: 46px;
+}
+
+.f-links-t{
+    font-size: 13px;
+    line-height: 27px;
+}
+
+.f-contact-t{
+    font-size: 12px;
+    line-height: 45px;
+}
+
+
+/* SHOP.HTML */
+
+.bg-sect1{
+    background: linear-gradient(90deg, #F6F8FC 0%, #F6F8FC 44.79%, #F5F7FA 74.48%, rgba(243, 239, 238, 0) 100%);
+}

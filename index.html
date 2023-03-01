@@ -1,154 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body class="">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer>
+      
+    </script>
+  </head>
+  <body class="">
     <nav class="bg-black mx-auto flex items-center justify-between h-28">
-        <div class="pl-5">
-            <img src="./assets/logo.svg" alt="">
-        </div>
-        <div class="text-white space-x-7 flex items-center">
-            <span class="text-white font-oswald uppercase font-semibold nav-list-font cursor-pointer hover:opacity-20">Home</span>
-            <span class="text-white font-oswald uppercase font-semibold nav-list-font cursor-pointer hover:opacity-20">Shop</span>
-            <span class="text-white font-oswald uppercase font-semibold nav-list-font cursor-pointer hover:opacity-20">Blog</span>
-            <span class="text-white font-oswald uppercase font-semibold nav-list-font cursor-pointer hover:opacity-20">Sale</span>
-            <span class="text-white font-oswald uppercase font-semibold nav-list-font cursor-pointer hover:opacity-20">Contact Us</span>
-            <div class="flex items-center">
-                <img src="./assets/search.svg" alt="" class="cursor-pointer">
-                <input type="text" placeholder="SEARCH" class="bg-transparent pl-2 font-oswald font-semibold nav-list-font text-white">
-            </div>
-        </div>
+      <div class="flex flex-col md:hidden space-y-1 pl-2">
+        <div class="bg-white h-1 w-6"></div>
+        <div class="bg-white h-1 w-6"></div>
+        <div class="bg-white h-1 w-6"></div>
+      </div>
+      <div class="pl-5">
+        <img src="./assets/logo.svg" alt="" />
+      </div>
+      <div class="text-white space-x-7 items-center hidden md:flex">
+        <a href="./index.html">
+          <span
+            class="text-white font-oswald uppercase font-semibold nav-list-font cursor-pointer hover:opacity-20"
+            >Home</span
+          >
+        </a>
+        <a href="./shop.html">
+          <span
+            class="text-white font-oswald uppercase font-semibold nav-list-font cursor-pointer hover:opacity-20"
+            >Shop</span
+          >
+        </a>
+        <a href="">
+          <span
+            class="text-white font-oswald uppercase font-semibold nav-list-font cursor-pointer hover:opacity-20"
+            >Blog</span
+          >
+        </a>
+        <a href="">
+          <span
+            class="text-white font-oswald uppercase font-semibold nav-list-font cursor-pointer hover:opacity-20"
+            >Sale</span
+          >
+        </a>
+        <a href="">
+          <span
+            class="text-white font-oswald uppercase font-semibold nav-list-font cursor-pointer hover:opacity-20"
+            >Contact Us</span
+          >
+        </a>
         <div class="flex items-center">
-            <div class="mr-8 items-center space-x-3">
-                <span class="text-white uppercase font-oswald font-semibold nav-list-font cursor-pointer hover:opacity-20">sign in</span>
-                <span class="text-white uppercase font-oswald font-semibold nav-list-font cursor-pointer hover:opacity-20">create an account</span>
-            </div>
-            <img src="./assets/liked.svg" alt="" class="mr-5">
-            <div class="flex items-center cursor-pointer">
-                <img src="./assets/cart.svg" alt="" class="mr-3">
-                <div class="items-center mr-6">
-                    <p class="text-white font-roboto cart-font font-medium">Shopping Cart</p>
-                    <p class="text-white font-roboto font-bold price-font">NGN 0,00</p>
-                </div>
-            </div>
+          <img src="./assets/search.svg" alt="" class="cursor-pointer" />
+          <input
+            type="text"
+            placeholder="SEARCH"
+            class="bg-transparent pl-2 font-oswald font-semibold nav-list-font text-white"
+          />
         </div>
+      </div>
+      <div class="flex items-center">
+        <div class="mr-8 items-center space-x-3 hidden md:flex">
+          <span
+            class="text-white uppercase font-oswald font-semibold nav-list-font cursor-pointer hover:opacity-20"
+            >sign in</span
+          >
+          <span
+            class="text-white uppercase font-oswald font-semibold nav-list-font cursor-pointer hover:opacity-20"
+            >create an account</span
+          >
+        </div>
+        <img src="./assets/liked.svg" alt="" class="mr-5" />
+        <div class="flex items-center cursor-pointer">
+          <img src="./assets/cart.svg" alt="" class="mr-3" />
+          <div class="items-center mr-6 hidden md:flex md:flex-col">
+            <p class="text-white font-roboto cart-font font-medium">
+              Shopping Cart
+            </p>
+            <p class="text-white font-roboto font-bold price-font">NGN 0,00</p>
+          </div>
+        </div>
+      </div>
     </nav>
 
-
     <div class="contain m-5">
-
-        <!-- CAROUSEL SECTION  -->
-        <section class="mt-5 carousel-1 flex mx-auto">
-            <div class="flex">
-                <div class="flex ml-60 mx-auto">
-                    <div class="flex flex-col mt-64">
-                        <h1 class="uppercase font-oswald font-semibold cpa-text">SUMMER SALE <br>
-                            <span>GET</span> <span class="text-transparent stroked font-oswald">30% OFF</span> <br>
-                            On all items.</h1>
-                            <button class="font-oswald uppercase font-medium landing-cta w-max mt-12 ml-2 hover:bg-black hover:text-white">Shop Now</button>
-                    </div>
-                    <div class="flex w-fit h-fit">
-                        <div class="bg-black text-black border-black border not-italic absolute rect-v"></div>
-                        <div class="bg-black text-black border-black border w-28 rotate-90 relative rect-r"></div>
-                    </div>
-                </div>
-                <div class="flex ml-20">
-                    <img src="./assets/model-1.svg" alt="" class="absolute first-model">
-                    <img src="./assets/model-2.svg" alt="" class="relative second-model">
-                </div>
+      <!-- CAROUSEL SECTION  -->
+      <section class="mt-5 carousel-1 flex mx-auto">
+        <div class="flex">
+          <div class="flex ml-60 mx-auto">
+            <div class="flex flex-col mt-64">
+              <h1 class="uppercase font-oswald font-semibold cpa-text">
+                SUMMER SALE <br />
+                <span>GET</span>
+                <span class="text-transparent stroked font-oswald"
+                  >30% OFF</span
+                >
+                <br />
+                On all items.
+              </h1>
+              <button
+                class="font-oswald uppercase font-medium landing-cta w-max mt-12 ml-2 hover:bg-black hover:text-white"
+              >
+                Shop Now
+              </button>
             </div>
-        </section>
+          </div>
+          <div class="flex ml-20">
+            <img
+              src="./assets/model-1.svg"
+              alt=""
+              class="absolute first-model"
+            />
+            <img
+              src="./assets/model-2.svg"
+              alt=""
+              class="relative second-model"
+            />
+          </div>
+        </div>
+      </section>
 
-        <!-- BRAND LIST SECTION -->
-        <section class="mt-10">
-            <div class="items-center flex flex-col border-b-2">
-                <div class="flex items-center justify-center float-left relative lg">
-                    <div class="bg-lineGray border legend-border"></div>
-                    <h1 class="font-oswald font-normal legend mx-24 items-center justify-center">Choose your brand</h1>
-                    <div class="bg-lineGray border legend-border"></div>
-                </div>
-                <div class="flex justify-between border-x border-lineGray w-full px-3">
-                    <img src="./assets/chanel.svg" alt="" class="px-11 py-14 my-7 hover:bg-lineGray">
-                    <img src="./assets/burberry.svg" alt="" class="px-8 py-14 my-7 hover:bg-lineGray">
-                    <img src="./assets/dior.svg" alt="" class="px-16 py-14 my-7 hover:bg-lineGray">
-                    <img src="./assets/fendi.svg" alt="" class="px-16 py-14 my-7 hover:bg-lineGray">
-                    <img src="./assets/versace.svg" alt="" class="px-12 py-14 my-7 hover:bg-lineGray">
-                    <img src="./assets/gucci.svg" alt="" class="px-14 py-14 my-7 hover:bg-lineGray">
-                    <img src="./assets/armani.svg" alt="" class="px-14 py-8 my-7 hover:bg-lineGray">
-                </div>
-            </div>
-        </section>
+      <!-- BRAND LIST SECTION -->
+      <section class="mt-10">
+        <div class="items-center flex flex-col border-b-2">
+          <div class="flex items-center justify-center float-left relative lg">
+            <div class="bg-lineGray border legend-border"></div>
+            <h1
+              class="font-oswald font-normal legend mx-24 items-center justify-center"
+            >
+              Choose your brand
+            </h1>
+            <div class="bg-lineGray border legend-border"></div>
+          </div>
+          <div
+            class="flex justify-between border-x border-lineGray w-full px-3"
+          >
+            <img
+              src="./assets/chanel.svg"
+              alt=""
+              class="px-11 py-14 my-7 hover:bg-lineGray"
+            />
+            <img
+              src="./assets/burberry.svg"
+              alt=""
+              class="px-8 py-14 my-7 hover:bg-lineGray"
+            />
+            <img
+              src="./assets/dior.svg"
+              alt=""
+              class="px-16 py-14 my-7 hover:bg-lineGray"
+            />
+            <img
+              src="./assets/fendi.svg"
+              alt=""
+              class="px-16 py-14 my-7 hover:bg-lineGray"
+            />
+            <img
+              src="./assets/versace.svg"
+              alt=""
+              class="px-12 py-14 my-7 hover:bg-lineGray"
+            />
+            <img
+              src="./assets/gucci.svg"
+              alt=""
+              class="px-14 py-14 my-7 hover:bg-lineGray"
+            />
+            <img
+              src="./assets/armani.svg"
+              alt=""
+              class="px-14 py-8 my-7 hover:bg-lineGray"
+            />
+          </div>
+        </div>
+      </section>
 
-        <!-- CTA SECTION -->
+      <!-- CTA SECTION -->
 
-        <section class="flex mt-8">
-            <div class="flex flex-col mr-14">
-                <div class="flex bg-grayish items-center mb-8">
-                    <img src="./assets/model-3.svg" alt="">
-                    <div class="items-center pr-72 mr-16">
-                        <h1 class="uppercase font-oswald font-semibold t-cta-01 pb-2">Choose <br>Your Look</h1>
-                        <p class="font-roboto font-light t-cta-02 pb-12">See our clothing collections</p>
-                        <button class="uppercase font-oswald font-medium t-cta-03 text-center cta-button hover:bg-black hover:text-white hover:border-white">See offers</button>
-                    </div>
-                </div>
-                <div class="flex items-center bg-pinkish">
-                    <div class="items-center ml-24">
-                        <h1 class="uppercase font-oswald font-semibold t-cta-01 pb-2">Brand new style</h1>
-                        <p class="font-roboto font-light t-cta-02 pb-12">Popular clothing brands</p>
-                        <button class="uppercase font-oswald font-medium t-cta-03 text-center cta-button hover:bg-black hover:text-white hover:border-white">See offers</button>
-                    </div>
-                    <img src="./assets/model-4.svg" alt="">
-                </div>
+      <section class="flex mt-8">
+        <div class="flex flex-col mr-14">
+          <div class="flex bg-grayish items-center mb-8">
+            <img src="./assets/model-3.svg" alt="" />
+            <div class="items-center pr-72 mr-16">
+              <h1 class="uppercase font-oswald font-semibold t-cta-01 pb-2">
+                Choose <br />Your Look
+              </h1>
+              <p class="font-roboto font-light t-cta-02 pb-12">
+                See our clothing collections
+              </p>
+              <button
+                class="uppercase font-oswald font-medium t-cta-03 text-center cta-button hover:bg-black hover:text-white hover:border-white"
+              >
+                See offers
+              </button>
             </div>
-            <div class="flex items-end">
-                <div class="pl-16 pb-24 absolute">
-                    <h1 class="uppercase font-oswald font-semibold t-cta-11 pb-2">Up to <br>40% off</h1>
-                    <p class="font-roboto font-light t-cta-12 pb-12">Special offers and great deals</p>
-                    <button class="uppercase font-oswald font-medium t-cta-03 text-center cta-button hover:bg-black hover:text-white hover:border-white">Shop now</button>
-                </div>
-                <img src="./assets/model-5.svg" alt="" class="">
+          </div>
+          <div class="flex items-center bg-pinkish">
+            <div class="items-center ml-24">
+              <h1 class="uppercase font-oswald font-semibold t-cta-01 pb-2">
+                Brand new style
+              </h1>
+              <p class="font-roboto font-light t-cta-02 pb-12">
+                Popular clothing brands
+              </p>
+              <button
+                class="uppercase font-oswald font-medium t-cta-03 text-center cta-button hover:bg-black hover:text-white hover:border-white"
+              >
+                See offers
+              </button>
             </div>
-        </section>
-       
-        <!-- SHOWCASE 1 SECTION -->
+            <img src="./assets/model-4.svg" alt="" />
+          </div>
+        </div>
+        <div class="flex items-end">
+          <div class="pl-16 pb-24 absolute">
+            <h1 class="uppercase font-oswald font-semibold t-cta-11 pb-2">
+              Up to <br />40% off
+            </h1>
+            <p class="font-roboto font-light t-cta-12 pb-12">
+              Special offers and great deals
+            </p>
+            <button
+              class="uppercase font-oswald font-medium t-cta-03 text-center cta-button hover:bg-black hover:text-white hover:border-white"
+            >
+              Shop now
+            </button>
+          </div>
+          <img src="./assets/model-5.svg" alt="" class="" />
+        </div>
+      </section>
 
-        <section class="mt-8 flex">
-            <div class="border-r border-r-grayish pr-52 pb-show">
-                <h1 class="capitalize font-oswald font-normal t-cta-31 mt-5">Shop some wear</h1>
-                <div class="font-roboto font-normal t-cta-32 items-center">
-                    <input type="checkbox" name="Best Sellers" id="Best Sellers">
-                    <label for="Best Sellers    ">Best Sellers</label>
-                </div>
-                <div class="font-roboto font-normal t-cta-32 items-center">
-                    <input type="checkbox" name="New Arrivals" id="New Arrivals">
-                    <label for="New Arrivals">New Arrivals</label>
-                </div>
-                <div class="font-roboto font-normal t-cta-32 items-center">
-                    <input type="checkbox" name="Top Women" id="Top Women">
-                    <label for="Top Women">Top Women</label>
-                </div>
-                <div class="font-roboto font-normal t-cta-32 items-center">
-                    <input type="checkbox" name="Collections1" id="Collections1">
-                    <label for="Collections1">Collection: Summer </label>
-                </div>
-                <div class="font-roboto font-normal t-cta-32 items-center">
-                    <input type="checkbox" name="Collections2" id="Collections2" checked>
-                    <label for="Collections2">Collections: Spring</label>
-                </div>
-                <div class="font-roboto font-normal t-cta-32 items-center">
-                    <input type="checkbox" name="Trending" id="Trending">
-                    <label for="Trending">Trending</label>
-                </div>
+      <!-- SHOWCASE 1 SECTION -->
+
+      <section class="mt-8 flex">
+        <div class="flex">
+          <div class="border-r border-r-grayish pb-show w-1/4">
+            <h1 class="capitalize font-oswald font-normal t-cta-31 mt-5">
+              Shop some wear
+            </h1>
+            <div class="font-roboto font-normal t-cta-32 items-center">
+              <input type="checkbox" name="Best Sellers" id="Best Sellers" />
+              <label for="Best Sellers">Best Sellers</label>
             </div>
-        </section>
+            <div class="font-roboto font-normal t-cta-32 items-center">
+              <input type="checkbox" name="New Arrivals" id="New Arrivals" />
+              <label for="New Arrivals">New Arrivals</label>
+            </div>
+            <div class="font-roboto font-normal t-cta-32 items-center">
+              <input type="checkbox" name="Top Women" id="Top Women" />
+              <label for="Top Women">Top Women</label>
+            </div>
+            <div class="font-roboto font-normal t-cta-32 items-center">
+              <input type="checkbox" name="Collections1" id="Collections1" />
+              <label for="Collections1">Collection: Summer </label>
+            </div>
+            <div class="font-roboto font-normal t-cta-32 items-center">
+              <input
+                type="checkbox"
+                name="Collections2"
+                id="Collections2"
+                checked
+              />
+              <label for="Collections2">Collections: Spring</label>
+            </div>
+            <div class="font-roboto font-normal t-cta-32 items-center">
+              <input type="checkbox" name="Trending" id="Trending" />
+              <label for="Trending">Trending</label>
+            </div>
+          </div>
+          <div class="">
+            <div class="ml-8 flex w-full flex-wrap">
+              <div class="w-1/4">
+                <img src="./assets/mat-1.svg" alt="" />
+                <p
+                  class="font-oswald uppercase font-semibold text-xs text-cat_gray mt-4"
+                >
+                  Top Women
+                </p>
+                <p class="font-oswald font-light text-lg mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+                <p class="font-oswald font-medium text-2xl">NGN 200</p>
+              </div>
+              <div class="w-1/4">
+                <img src="./assets/mat-2.svg" alt="" />
+                <p
+                  class="font-oswald uppercase font-semibold text-xs text-cat_gray mt-4"
+                >
+                  Top Women
+                </p>
+                <p class="font-oswald font-light text-lg mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+                <p class="font-oswald font-medium text-2xl">NGN 200</p>
+              </div>
+              <div class="w-1/4">
+                <img src="./assets/mat-3.svg" alt="" />
+                <p
+                  class="font-oswald uppercase font-semibold text-xs text-cat_gray mt-4"
+                >
+                  Top Women
+                </p>
+                <p class="font-oswald font-light text-lg mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+                <p class="font-oswald font-medium text-2xl">NGN 200</p>
+              </div>
+              <div class="w-1/4">
+                <img src="./assets/mat-4.svg" alt="" />
+                <p
+                  class="font-oswald uppercase font-semibold text-xs text-cat_gray mt-4"
+                >
+                  Top Women
+                </p>
+                <p class="font-oswald font-light text-lg mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+                <p class="font-oswald font-medium text-2xl">NGN 200</p>
+              </div>
+              <div class="w-1/4 pt-12">
+                <img src="./assets/mat-5.svg" alt="" />
+                <p
+                  class="font-oswald uppercase font-semibold text-xs text-cat_gray mt-4"
+                >
+                  Top Women
+                </p>
+                <p class="font-oswald font-light text-lg mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+                <p class="font-oswald font-medium text-2xl">NGN 200</p>
+              </div>
+              <div class="w-1/4 pt-12">
+                <img src="./assets/mat-6.svg" alt="" />
+                <p
+                  class="font-oswald uppercase font-semibold text-xs text-cat_gray mt-4"
+                >
+                  Top Women
+                </p>
+                <p class="font-oswald font-light text-lg mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+                <p class="font-oswald font-medium text-2xl">NGN 200</p>
+              </div>
+              <div class="w-1/4 pt-12">
+                <img src="./assets/mat-7.svg" alt="" />
+                <p
+                  class="font-oswald uppercase font-semibold text-xs text-cat_gray mt-4"
+                >
+                  Top Women
+                </p>
+                <p class="font-oswald font-light text-lg mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+                <p class="font-oswald font-medium text-2xl">NGN 200</p>
+              </div>
+              <div class="w-1/4 pt-12">
+                <img src="./assets/mat-8.svg" alt="" />
+                <p
+                  class="font-oswald uppercase font-semibold text-xs text-cat_gray mt-4"
+                >
+                  Top Women
+                </p>
+                <p class="font-oswald font-light text-lg mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+                <p class="font-oswald font-medium text-2xl">NGN 200</p>
+              </div>
+            </div>
+            <div class="w-full items-center text-center">
+              <button
+                class="text-center mt-16 uppercase border-2 border-t-white border-greyish px-9 py-4 text-black opacity-60 font-oswald font-medium text-sm hover:border-4 hover:border-black"
+              >
+                Load more
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-</body>
+    <section class="flex justify-around bg-bg_bluey mt-5 h-24">
+      <div class="flex items-center justify-center">
+        <img src="./assets/check.svg" alt="" />
+        <p class="font-oswald font-normal pre-footer-t pl-4">Duties and Taxes Guaranteed</p>
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./assets/check.svg" alt="" />
+        <p class="font-oswald font-normal pre-footer-t pl-4">Free Express Shipping</p>
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./assets/check.svg" alt="" />
+        <p class="font-oswald font-normal pre-footer-t pl-4">Customer Love</p>
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./assets/check.svg" alt="" />
+        <p class="font-oswald font-normal pre-footer-t pl-4">Easy Returns</p>
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./assets/check.svg" alt="" />
+        <p class="font-oswald font-normal pre-footer-t pl-4">Secure Payment</p>
+      </div>
+    </section>
+    <footer class="bg-black text-white">
+        <div class="pt-16 px-6 py-36 flex justify-around">
+            <div class="">
+                <img src="./assets/logo.svg" alt="">
+            </div>
+            <div class="flex flex-col uppercase">
+                <h3 class="pb-7 font-semibold font-oswald t-cta-03">Features</h3>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">Men</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">Women</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">Boys</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">Girls</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">New Arrivals</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">Shoes</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">Clothes</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">Accessories</p></a>
+            </div>
+            <div class="flex flex-col uppercase">
+                <h3 class="pb-7 font-semibold font-oswald t-cta-03">Menu</h3>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">About Us</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">contact us</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">my account</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">orders history</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">my wishlist</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">blog</p></a>
+                <a href=""><p class="font-roboto font-light pb-4 opacity-30 f-links-t">login</p></a>
+            </div>
+            <div class="flex flex-col uppercase">
+                <h3 class="pb-7 font-semibold font-oswald t-cta-03">Contact Us</h3>
+                <div class="font-oswald">
+                    <h4 class="font-semibold f-contact-t">Address:</h4>
+                    <p class="font-light opacity-30 f-contact-t">1, Ayodele Omoniyi Close, Lagos</p>
+                </div>
+                <div class="font-oswald">
+                    <h4 class="font-semibold f-contact-t">Phone:</h4>
+                    <p class="font-light opacity-30 f-contact-t">+(234) 81-659-300-89</p>
+                </div>
+                <div class="font-oswald">
+                    <h4 class="font-semibold f-contact-t">Email:</h4>
+                    <p class="font-light opacity-30 f-contact-t">theolayinkayodele@gmail.com</p>
+                </div>
+                <div class="font-oswald">
+                    <h4 class="font-semibold f-contact-t">Working days/hours</h4>
+                    <p class="font-light opacity-30 f-contact-t">Mon - Sun / 10:00AM - 12:00AM</p>
+                </div>
+            </div>
+            <div class="flex flex-col uppercase">
+              <h3 class="pb-7 font-semibold font-oswald t-cta-03">follow us</h3>
+              <a href="">
+                <div class="flex">
+                  <img src="./assets/bw-fb.svg" alt="">
+                  <p class="pl-5 font-roboto font-medium f-socials-t">Facebook</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="flex">
+                  <img src="./assets/bw-tt.svg" alt="">
+                  <p class="pl-5 font-roboto font-medium f-socials-t">Twitter</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="flex">
+                  <img src="./assets/bw-insta.svg" alt="">
+                  <p class="pl-5 font-roboto font-medium f-socials-t">Instagram</p>
+                </div>
+              </a>
+            </div>
+        </div>
+        <p>&copy; CopyRight 2023 Ayodele Olayinka</p>
+    </footer>
+  </body>
 </html>
