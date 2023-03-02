@@ -166,6 +166,18 @@ input[type="checkbox"]:checked{
     line-height: 45px;
 }
 
+.active-2{
+    display: none;
+}
+
+.active-1{
+    transform: rotateZ(45deg);
+}
+
+.active-3{
+    transform: rotateZ(-45deg);
+}
+
 
 /* SHOP.HTML */
 
